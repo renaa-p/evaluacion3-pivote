@@ -79,12 +79,12 @@ def ejecutar_verificacion(
     # Control con biblioteca estándar
     x_numpy = np.linalg.solve(A_np, b_np).tolist()
 
-    # Solucion de referencia en 80 dígitos decimales (mpmath)
+    # Solución de referencia en 80 dígitos decimales (mpmath)
     A_mp_mat = mp.matrix([[mp.mpf(v) for v in fila] for fila in A_str])
     b_mp_vec = mp.matrix([mp.mpf(v) for v in b_str])
     x_exacto_mp = list(mp.lu_solve(A_mp_mat, b_mp_vec))
 
-    # Residuos en precisiopn extendida
+    # Residuos en precisión extendida
     r_sin, norm_sin = _residuo_extendido(A_str, b_str, res_sin.x)
     r_con, norm_con = _residuo_extendido(A_str, b_str, res_con.x)
 
