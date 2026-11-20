@@ -1,0 +1,43 @@
+VERIFICACIÓN NUMÉRICA Y RESIDUO EN PRECISIÓN EXTENDIDA (80 DÍGITOS)
+========================================================================
+Condicionamiento kappa_2(A)   : 3.084736e+13
+Condicionamiento kappa_inf(A) : 5.367827e+13
+Cota pesimista kappa_2 * eps  : 6.849490e-03 (~2.16 dígitos)
+
+--- MÉTRICAS DE ESTABILIDAD ---
+[Sin pivoteo]    Máximo multiplicador: 2.752593e+13 | Factor crecimiento: 2.641224e+03 | Error rel. ||dx||/||x||: 2.380178e-10
+[Con pivoteo]    Máximo multiplicador: 2.465558e+09 | Factor crecimiento: 1.783202e+00 | Error rel. ||dx||/||x||: 2.701713e-13
+[Refinado (2x)]  Error rel. ||dx||/||x||: 4.855364e-17
+
+--- NORMA INFINITO DEL RESIDUO r = b - Ax ---
+||r||_inf (Sin pivoteo)           : 1.7717520031e-07
+||r||_inf (Pivoteo escalado)      : 2.2908764385e-10
+||r||_inf (Tras refinamiento)     : 2.6031873696e-10
+
+--- VECTOR RESIDUO r = b - Ax (PIVOTEO ESCALADO) ---
+r[01] = -8.076888766281e-21
+r[02] = -8.729114464595e-13
+r[03] = -3.592964166660e-18
+r[04] = +4.397029139892e-12
+r[05] = -8.922330049597e-20
+r[06] = +2.290876438498e-10
+r[07] = -1.390746536077e-17
+r[08] = +3.113763515938e-11
+r[09] = -1.802909306141e-20
+r[10] = -3.566633905199e-12
+r[11] = +9.885511241672e-18
+r[12] = +5.163080009631e-11
+
+--- VECTOR RESIDUO r = b - Ax (TRAS REFINAMIENTO ITERATIVO) ---
+r_ref[01] = -3.460579406855e-21
+r_ref[02] = +1.342384381222e-12
+r_ref[03] = +2.322764128586e-18
+r_ref[04] = -1.927930221974e-12
+r_ref[05] = -1.829773859791e-20
+r_ref[06] = -2.603187369605e-10
+r_ref[07] = -9.806287101840e-19
+r_ref[08] = +2.070404949959e-12
+r_ref[09] = +9.406367635614e-21
+r_ref[10] = -6.943865621427e-13
+r_ref[11] = -5.689585572328e-19
+r_ref[12] = -9.384789012497e-12

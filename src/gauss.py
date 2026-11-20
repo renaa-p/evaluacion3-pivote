@@ -126,7 +126,7 @@ def eliminacion_gaussiana(
             if abs(m_ik) > max_mult:
                 max_mult = abs(m_ik)
 
-            A[i][k] = 0.0  # Anulacion exacta bajo la diagonal sin operación redundante
+            A[i][k] = 0.0  # Anulación exacta bajo la diagonal sin operación redundante
             for j in range(k + 1, n):
                 A[i][j] -= m_ik * A[k][j]
                 paso_reg.mul_div += 1
@@ -138,7 +138,7 @@ def eliminacion_gaussiana(
             paso_reg.mul_div += 1
             paso_reg.sum_res += 1
 
-        trazas.append(_formatear_matriz(A, b, f"{estrategia} — Paso {k + 1}"))
+        trazas.append(_formatear_matriz(A, b, f"{estrategia} - Paso {k + 1}"))
 
     x = sustitucion_regresiva(A, b, registro=reg)
     factor_crecimiento = max_durante / max_inicial

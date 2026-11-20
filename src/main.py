@@ -65,13 +65,13 @@ def main() -> None:
     with open(ruta_sol, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow([
-            "incognita",
+            "incógnita",
             "valor_pivoteo_escalado",
-            "digitos_defendibles_pivoteo",
+            "dígitos_defendibles_pivoteo",
             "valor_refinado",
-            "digitos_defendibles_refinado",
+            "dígitos_defendibles_refinado",
             "valor_sin_pivoteo",
-            "digitos_correctos_sin_pivoteo",
+            "dígitos_correctos_sin_pivoteo",
             "control_numpy",
         ])
         for i in range(12):
@@ -103,10 +103,10 @@ def main() -> None:
                 f"(~{ver.digitos_cota_pesimista:.2f} dígitos)\n\n")
 
         f.write("--- MÉTRICAS DE ESTABILIDAD ---\n")
-        f.write(f"[Sin pivoteo]    Max multiplicador: {res_sin.max_multiplicador:.6e} | "
+        f.write(f"[Sin pivoteo]    Máximo multiplicador: {res_sin.max_multiplicador:.6e} | "
                 f"Factor crecimiento: {res_sin.factor_crecimiento:.6e} | "
                 f"Error rel. ||dx||/||x||: {ver.error_relativo_sin_piv:.6e}\n")
-        f.write(f"[Con pivoteo]    Max multiplicador: {res_con.max_multiplicador:.6e} | "
+        f.write(f"[Con pivoteo]    Máximo multiplicador: {res_con.max_multiplicador:.6e} | "
                 f"Factor crecimiento: {res_con.factor_crecimiento:.6e} | "
                 f"Error rel. ||dx||/||x||: {ver.error_relativo_con_piv:.6e}\n")
         f.write(f"[Refinado (2x)]  Error rel. ||dx||/||x||: {ver.error_relativo_refinado:.6e}\n\n")
