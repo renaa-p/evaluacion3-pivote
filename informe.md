@@ -185,6 +185,4 @@ precisión mixta.
   extendida; la factorización propia no se delega a una rutina de biblioteca.
 
 Se utilizó un asistente de IA para apoyar la organización de la documentación,
-la verificación de requisitos y la revisión de consistencia. El código, la
-estrategia numérica y la interpretación deben ser explicables por el estudiante
-en la defensa oral.
+la verificación de requisitos y la revisión de consistencia.
